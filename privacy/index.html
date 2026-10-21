@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anudina Privacy Policy</title>
+<meta name="description" content="How the Anudina diary app stores your data and how to delete it.">
+<style>
+:root { --bg:#fff; --fg:#1f2328; --muted:#59636e; --line:#d1d9e0; --accent:#0b6b5c; --code:#f3f5f7; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#14181c; --fg:#e6e9ec; --muted:#9aa5b1; --line:#2d353d; --accent:#5cc7b2; --code:#1d2329; }
+}
+body { margin:0; background:var(--bg); color:var(--fg);
+  font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans Malayalam",sans-serif; }
+main { max-width:42rem; margin:0 auto; padding:2rem 1rem 4rem; }
+h1 { font-size:1.6rem; line-height:1.3; }
+h2 { margin-top:2.5rem; padding-top:1rem; border-top:1px solid var(--line); font-size:1.3rem; }
+h3 { margin-top:1.8rem; font-size:1.05rem; color:var(--accent); }
+ul { padding-left:1.3rem; } li { margin:.3rem 0; }
+code { background:var(--code); padding:.1em .35em; border-radius:4px; font-size:.92em; }
+a { color:var(--accent); }
+nav { color:var(--muted); font-size:.95rem; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="#delete">Delete your account</a></nav>
+<h1>Anudina Privacy Policy</h1>
+<p><strong>Last updated:</strong> 21 October 2026<br>
+<strong>Contact:</strong> aravindpudayoor@gmail.com &nbsp;·&nbsp; <strong>Developer:</strong> Aravind Sankar Pudayoor</p>
+<h2 lang="en" id="en">English</h2>
+<p>Anudina is a personal diary app: daily entries, income and expenses, tasks, and an<br>
+optional Malayalam calendar. Your diary is private. This page explains what is<br>
+stored, where, and how to remove it.</p>
+<h3 lang="en">What Anudina stores</h3>
+<ul>
+<li><strong>On your phone:</strong> your diary entries, tasks, transactions, categories and settings. Without an account, this is the only place your data exists. It never leaves your phone.
+</li>
+<li><strong>On our server, only if you create an account and sign in:</strong>
+<ul>
+<li>the same diary entries, tasks, transactions and categories (so you can back them up and use more than one phone);
+</li>
+<li>your email address and your name (first and last, which you can edit);
+</li>
+<li>your password, stored only as a one-way hash;
+</li>
+<li>for each phone you sign in on: a hashed sign-in token, the device name your phone reports, and the time it was last used;
+</li>
+<li>a short-lived emailed code while you are confirming your email or resetting your password.
+</li></ul>
+</li>
+<li><strong>Server logs:</strong> like any web server, ours writes technical logs of requests, which include IP addresses. They are used only to find and fix problems, and they rotate automatically. Your diary text, email and password are kept out of them.
+</li></ul>
+<h3 lang="en">What Anudina does not do</h3>
+<ul>
+<li>No advertising, no tracking, no analytics, no crash-reporting SDKs.
+</li>
+<li>No location access. The Malayalam calendar uses the version you choose in Settings, never your location.
+</li>
+<li>No selling or sharing of your data with anyone.
+</li>
+<li>We do not read your diary. It is encrypted in transit with HTTPS, but it is not end-to-end encrypted, so the server operator technically could read it. We will not.
+</li></ul>
+<h3 lang="en">Permissions</h3>
+<ul>
+<li><strong>Internet:</strong> to sync with the server, only after you sign in.
+</li>
+<li><strong>Notifications:</strong> to show the task reminders and the optional "tomorrow's plan" reminder you set up.
+</li>
+<li><strong>Alarms &amp; reminders (exact alarms):</strong> so a task reminder arrives at the minute you chose. You can turn it off in your phone's settings; reminders then still arrive, a few minutes late.
+</li>
+<li><strong>Run at startup:</strong> so that reminders you scheduled come back after the phone restarts.
+</li>
+<li><strong>Vibrate:</strong> for reminder notifications.
+</li>
+<li><strong>Background work and keeping the phone awake briefly:</strong> so a short job, at most every 15 minutes, can check that your reminders are still scheduled and show a missed one late. It runs only on your phone and sends nothing anywhere.
+</li>
+<li><strong>Biometrics / screen lock:</strong> only for the optional App lock. Your fingerprint or face is handled by Android and never reaches Anudina.
+</li></ul>
+<h3 lang="en">Email</h3>
+<p>Your email is used to sign in, to send a one-time code that confirms your email<br>
+when you create an account, and to send a one-time code if you ask to reset your<br>
+password. We send nothing else. The emails are delivered by an email-delivery<br>
+service that handles them for us and may not use them for anything else.</p>
+<h3 lang="en" id="delete">Keeping and deleting your data</h3>
+<ul>
+<li><strong>Delete your account:</strong> Settings → Sync &amp; backup → Delete account (asks for your password). This permanently deletes your account and everything synced to the server, immediately.
+</li>
+<li><strong>Backups:</strong> we do not currently keep server backups. If we add them, they will be kept for at most 30 days, and this page will say so.
+</li>
+<li><strong>Cannot open the app?</strong> Email us from your account address and we will delete the account.
+</li>
+<li><strong>Data on your phone</strong> stays until you uninstall the app or clear its storage.
+</li>
+<li><strong>Export:</strong> Settings → Export lets you save your diary, income/expenses and tasks as files at any time.
+</li></ul>
+<h3 lang="en">Children</h3>
+<p>Anudina is not directed at children under 13, and we do not knowingly collect their<br>
+data.</p>
+<h3 lang="en">Where data is stored</h3>
+<p>On a server operated by DigitalOcean in Bangalore, India. Data is protected by<br>
+HTTPS in transit and access controls on the server.</p>
+<h3 lang="en">Changes</h3>
+<p>If this policy changes in a way that matters, we will say so in the app and update<br>
+the date above.</p>
+</main>
+</body>
+</html>
