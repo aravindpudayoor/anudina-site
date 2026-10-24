@@ -26,7 +26,7 @@ nav { color:var(--muted); font-size:.95rem; }
 <main>
 <nav><a href="#delete">Delete your account</a></nav>
 <h1>Anudina Privacy Policy</h1>
-<p><strong>Last updated:</strong> 21 October 2026<br>
+<p><strong>Last updated:</strong> 24 October 2026<br>
 <strong>Contact:</strong> pudayooraravind@gmail.com &nbsp;·&nbsp; <strong>Developer:</strong> Aravind Sankar Pudayoor</p>
 <h2 lang="en" id="en">English</h2>
 <p>Anudina is a personal diary app: daily entries, income and expenses, tasks, and an<br>
@@ -46,7 +46,9 @@ stored, where, and how to remove it.</p>
 </li>
 <li>for each phone you sign in on: a hashed sign-in token, the device name your phone reports, and the time it was last used;
 </li>
-<li>a short-lived emailed code while you are confirming your email or resetting your password.
+<li>a short-lived emailed code while you are confirming your email or resetting your password;
+</li>
+<li>for each phone that gets reminders from our server: its push address (a Firebase Cloud Messaging token), the phone's time zone and, if you turned it on, the time of the daily "tomorrow's plan" reminder. It is deleted when you sign out of that phone or delete your account.
 </li></ul>
 </li>
 <li><strong>Server logs:</strong> like any web server, ours writes technical logs of requests, which include IP addresses. They are used only to find and fix problems, and they rotate automatically. Your diary text, email and password are kept out of them.
@@ -55,15 +57,17 @@ stored, where, and how to remove it.</p>
 <ul>
 <li>No advertising, no tracking, no analytics, no crash-reporting SDKs.
 </li>
+<li>Reminders reach your phone on time through Google's Firebase Cloud Messaging. What we send through it is an empty wake-up message: never your diary text or your task titles. The app then shows the reminder from the data on your phone. Google handles the message and the push address under its own privacy policy.
+</li>
 <li>No location access. The Malayalam calendar uses the version you choose in Settings, never your location.
 </li>
-<li>No selling or sharing of your data with anyone.
+<li>No selling or sharing of your data with anyone, apart from the two services that work for us: the email-delivery service and Google's Firebase Cloud Messaging.
 </li>
 <li>We do not read your diary. It is encrypted in transit with HTTPS, but it is not end-to-end encrypted, so the server operator technically could read it. We will not.
 </li></ul>
 <h3 lang="en">Permissions</h3>
 <ul>
-<li><strong>Internet:</strong> to sync with the server, only after you sign in.
+<li><strong>Internet:</strong> to sync with the server and receive reminder messages, only after you sign in.
 </li>
 <li><strong>Notifications:</strong> to show the task reminders and the optional "tomorrow's plan" reminder you set up.
 </li>
@@ -73,7 +77,7 @@ stored, where, and how to remove it.</p>
 </li>
 <li><strong>Vibrate:</strong> for reminder notifications.
 </li>
-<li><strong>Background work and keeping the phone awake briefly:</strong> so a short job, at most every 15 minutes, can check that your reminders are still scheduled and show a missed one late. It runs only on your phone and sends nothing anywhere.
+<li><strong>Background work and keeping the phone awake briefly:</strong> so a short job, at most every 15 minutes, can check that your reminders are still scheduled and show a missed one late. It runs only on your phone and sends nothing anywhere. On a phone that gets reminders from our server (when you are signed in), this job is not used.
 </li>
 <li><strong>Biometrics / screen lock:</strong> only for the optional App lock. Your fingerprint or face is handled by Android and never reaches Anudina.
 </li></ul>
@@ -99,7 +103,9 @@ service that handles them for us and may not use them for anything else.</p>
 data.</p>
 <h3 lang="en">Where data is stored</h3>
 <p>On a server operated by DigitalOcean in Bangalore, India. Data is protected by<br>
-HTTPS in transit and access controls on the server.</p>
+HTTPS in transit and access controls on the server. Reminder wake-up messages pass<br>
+through Google's Firebase Cloud Messaging, which runs on Google's servers; they<br>
+contain no diary text and no task titles.</p>
 <h3 lang="en">Changes</h3>
 <p>If this policy changes in a way that matters, we will say so in the app and update<br>
 the date above.</p>
