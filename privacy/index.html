@@ -26,7 +26,7 @@ nav { color:var(--muted); font-size:.95rem; }
 <main>
 <nav><a href="#delete">Delete your account</a></nav>
 <h1>Anudina Privacy Policy</h1>
-<p><strong>Last updated:</strong> 24 October 2026<br>
+<p><strong>Last updated:</strong> 16 November 2026<br>
 <strong>Contact:</strong> pudayooraravind@gmail.com &nbsp;·&nbsp; <strong>Developer:</strong> Aravind Sankar Pudayoor</p>
 <h2 lang="en" id="en">English</h2>
 <p>Anudina is a personal diary app: daily entries, income and expenses, tasks, and an<br>
@@ -61,7 +61,7 @@ stored, where, and how to remove it.</p>
 </li>
 <li>No location access. The Malayalam calendar uses the version you choose in Settings, never your location.
 </li>
-<li>No selling or sharing of your data with anyone, apart from the two services that work for us: the email-delivery service and Google's Firebase Cloud Messaging.
+<li>No selling or sharing of your data with anyone, apart from the three services that work for us: the email-delivery service, Google's Firebase Cloud Messaging, and the cloud storage (Google Drive) that holds our encrypted server backups.
 </li>
 <li>We do not read your diary. It is encrypted in transit with HTTPS, but it is not end-to-end encrypted, so the server operator technically could read it. We will not.
 </li></ul>
@@ -88,9 +88,9 @@ password. We send nothing else. The emails are delivered by an email-delivery<br
 service that handles them for us and may not use them for anything else.</p>
 <h3 lang="en" id="delete">Keeping and deleting your data</h3>
 <ul>
-<li><strong>Delete your account:</strong> Settings → Sync &amp; backup → Delete account (asks for your password). This permanently deletes your account and everything synced to the server, immediately.
+<li><strong>Delete your account:</strong> Settings → Account &amp; backup → Delete account (asks for your password). This permanently deletes your account and everything synced to the server, immediately.
 </li>
-<li><strong>Backups:</strong> we do not currently keep server backups. If we add them, they will be kept for at most 30 days, and this page will say so.
+<li><strong>Backups:</strong> we take an automatic backup of the server data every night, so we can recover from a failure. Each backup is encrypted on our server before a copy is sent to Google Drive, so Google cannot read it. Backups are kept for at most 30 days and then deleted. If you delete your account, your data leaves the server at once but can remain in backups until they expire, at most 30 days.
 </li>
 <li><strong>Cannot open the app?</strong> Email us from your account address and we will delete the account.
 </li>
@@ -105,7 +105,8 @@ data.</p>
 <p>On a server operated by DigitalOcean in Bangalore, India. Data is protected by<br>
 HTTPS in transit and access controls on the server. Reminder wake-up messages pass<br>
 through Google's Firebase Cloud Messaging, which runs on Google's servers; they<br>
-contain no diary text and no task titles.</p>
+contain no diary text and no task titles. Encrypted nightly backups are also kept in<br>
+Google Drive; only we hold the key.</p>
 <h3 lang="en">Changes</h3>
 <p>If this policy changes in a way that matters, we will say so in the app and update<br>
 the date above.</p>
